@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>행사 초대장</title>
+  <style>
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background: #f7f7f7;
+      padding: 20px;
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2em;
+    }
+    p {
+      color: #666;
+      margin: 5px 0;
+    }
+    form {
+      margin-top: 20px;
+    }
+    input, select, button {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 1em;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌟 5월 10일 행사 초대장 🌟</h1>
+  <img src="https://via.placeholder.com/600x300.png?text=행사+이미지" alt="행사 이미지">
+  <p>📍 장소: 서울시 강남구 어딘가</p>
+  <p>🕕 시간: 오후 6시</p>
+
+  <form action="https://formspree.io/f/xvgazkje" method="POST">
+    <input type="text" name="name" placeholder="이름을 입력하세요" required>
+    <input type="tel" name="phone" placeholder="연락처를 입력하세요" required>
+    <select name="attendance" required>
+      <option value="">참석 여부</option>
+      <option value="참석">참석</option>
+      <option value="불참">불참</option>
+    </select>
+    <button type="submit">제출하기</button>
+  </form>
+</body>
+</html>
